@@ -1,7 +1,7 @@
 # Kiqit
-Open sourced code of Kiqit.
+Open sourced code of Kiqit. Server and mobile clients are included.
 
-Kiqit is an event organizor. Check out the READMEs of the respected code bases.
+Kiqit is an event organizer. Check out the READMEs of the respected code bases.
 
 
 
