@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29555E55ACE8DB87D1BE4DA1 /* Pods_kiqitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0940028616CCB0F4A91FD5A8 /* Pods_kiqitTests.framework */; };
+		32F1A57073C2D71A22A7F897 /* Pods_kiqit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A217164984F667EC4A4D3B /* Pods_kiqit.framework */; };
+		8F0300781D487393005F3803 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0300771D487393005F3803 /* EventsTableViewController.swift */; };
+		8F3E3B7C1D4AF841006A102D /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3E3B7B1D4AF841006A102D /* EventTableViewCell.swift */; };
+		8F95EDBA1D488283009612C3 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F95EDB91D488283009612C3 /* Event.swift */; };
+		8FF892881D43EB1500DF08EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF892871D43EB1500DF08EF /* AppDelegate.swift */; };
+		8FF8928A1D43EB1500DF08EF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF892891D43EB1500DF08EF /* LoginViewController.swift */; };
+		8FF8928D1D43EB1500DF08EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF8928B1D43EB1500DF08EF /* Main.storyboard */; };
+		8FF8928F1D43EB1500DF08EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF8928E1D43EB1500DF08EF /* Assets.xcassets */; };
+		8FF892921D43EB1500DF08EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF892901D43EB1500DF08EF /* LaunchScreen.storyboard */; };
+		8FF8929D1D43EB1500DF08EF /* kiqitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8929C1D43EB1500DF08EF /* kiqitTests.swift */; };
+		8FF892A81D43EB1500DF08EF /* kiqitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF892A71D43EB1500DF08EF /* kiqitUITests.swift */; };
+		F02029AB8AE9B607B469E3C6 /* Pods_kiqitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12330BE66DDF5776DD0FE008 /* Pods_kiqitUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FF892991D43EB1500DF08EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FF8927C1D43EB1500DF08EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FF892831D43EB1500DF08EF;
+			remoteInfo = kiqit;
+		};
+		8FF892A41D43EB1500DF08EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FF8927C1D43EB1500DF08EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FF892831D43EB1500DF08EF;
+			remoteInfo = kiqit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0940028616CCB0F4A91FD5A8 /* Pods_kiqitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kiqitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F364568499E1E034F90BEA3 /* Pods-kiqitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiqitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kiqitTests/Pods-kiqitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		12330BE66DDF5776DD0FE008 /* Pods_kiqitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kiqitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A217164984F667EC4A4D3B /* Pods_kiqit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kiqit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F740A5FB26927E45A1D0FFA /* Pods-kiqitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiqitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kiqitUITests/Pods-kiqitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		346C8092FEB6F4A9E18398F6 /* Pods-kiqitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiqitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kiqitUITests/Pods-kiqitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4CAD34C6193CC40EA0722AF5 /* Pods-kiqit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiqit.release.xcconfig"; path = "Pods/Target Support Files/Pods-kiqit/Pods-kiqit.release.xcconfig"; sourceTree = "<group>"; };
+		84D62FF91A58D5B82DCF75C7 /* Pods-kiqit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiqit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kiqit/Pods-kiqit.debug.xcconfig"; sourceTree = "<group>"; };
+		8F0300771D487393005F3803 /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		8F3E3B7B1D4AF841006A102D /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		8F95EDB91D488283009612C3 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		8FF892841D43EB1500DF08EF /* kiqit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kiqit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF892871D43EB1500DF08EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FF892891D43EB1500DF08EF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8FF8928C1D43EB1500DF08EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FF8928E1D43EB1500DF08EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FF892911D43EB1500DF08EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FF892931D43EB1500DF08EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FF892981D43EB1500DF08EF /* kiqitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kiqitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF8929C1D43EB1500DF08EF /* kiqitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kiqitTests.swift; sourceTree = "<group>"; };
+		8FF8929E1D43EB1500DF08EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FF892A31D43EB1500DF08EF /* kiqitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kiqitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FF892A71D43EB1500DF08EF /* kiqitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kiqitUITests.swift; sourceTree = "<group>"; };
+		8FF892A91D43EB1500DF08EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7D26356261842F2A8B262BC /* Pods-kiqitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiqitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kiqitTests/Pods-kiqitTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FF892811D43EB1500DF08EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F1A57073C2D71A22A7F897 /* Pods_kiqit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FF892951D43EB1500DF08EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29555E55ACE8DB87D1BE4DA1 /* Pods_kiqitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FF892A01D43EB1500DF08EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F02029AB8AE9B607B469E3C6 /* Pods_kiqitUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26188EF2884E7EF2D3B5CA31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84D62FF91A58D5B82DCF75C7 /* Pods-kiqit.debug.xcconfig */,
+				4CAD34C6193CC40EA0722AF5 /* Pods-kiqit.release.xcconfig */,
+				0F364568499E1E034F90BEA3 /* Pods-kiqitTests.debug.xcconfig */,
+				C7D26356261842F2A8B262BC /* Pods-kiqitTests.release.xcconfig */,
+				2F740A5FB26927E45A1D0FFA /* Pods-kiqitUITests.debug.xcconfig */,
+				346C8092FEB6F4A9E18398F6 /* Pods-kiqitUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F95EDB71D488158009612C3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8FF892891D43EB1500DF08EF /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		8F95EDB81D48816C009612C3 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				8F0300771D487393005F3803 /* EventsTableViewController.swift */,
+				8F95EDB91D488283009612C3 /* Event.swift */,
+				8F3E3B7B1D4AF841006A102D /* EventTableViewCell.swift */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		8FF8927B1D43EB1500DF08EF = {
+			isa = PBXGroup;
+			children = (
+				8FF892861D43EB1500DF08EF /* kiqit */,
+				8FF8929B1D43EB1500DF08EF /* kiqitTests */,
+				8FF892A61D43EB1500DF08EF /* kiqitUITests */,
+				8FF892851D43EB1500DF08EF /* Products */,
+				26188EF2884E7EF2D3B5CA31 /* Pods */,
+				9F27CB2F1E157F08BDC8D0F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8FF892851D43EB1500DF08EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FF892841D43EB1500DF08EF /* kiqit.app */,
+				8FF892981D43EB1500DF08EF /* kiqitTests.xctest */,
+				8FF892A31D43EB1500DF08EF /* kiqitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FF892861D43EB1500DF08EF /* kiqit */ = {
+			isa = PBXGroup;
+			children = (
+				8F95EDB81D48816C009612C3 /* Events */,
+				8F95EDB71D488158009612C3 /* Login */,
+				8FF892871D43EB1500DF08EF /* AppDelegate.swift */,
+				8FF8928B1D43EB1500DF08EF /* Main.storyboard */,
+				8FF8928E1D43EB1500DF08EF /* Assets.xcassets */,
+				8FF892901D43EB1500DF08EF /* LaunchScreen.storyboard */,
+				8FF892931D43EB1500DF08EF /* Info.plist */,
+			);
+			path = kiqit;
+			sourceTree = "<group>";
+		};
+		8FF8929B1D43EB1500DF08EF /* kiqitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FF8929C1D43EB1500DF08EF /* kiqitTests.swift */,
+				8FF8929E1D43EB1500DF08EF /* Info.plist */,
+			);
+			path = kiqitTests;
+			sourceTree = "<group>";
+		};
+		8FF892A61D43EB1500DF08EF /* kiqitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FF892A71D43EB1500DF08EF /* kiqitUITests.swift */,
+				8FF892A91D43EB1500DF08EF /* Info.plist */,
+			);
+			path = kiqitUITests;
+			sourceTree = "<group>";
+		};
+		9F27CB2F1E157F08BDC8D0F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18A217164984F667EC4A4D3B /* Pods_kiqit.framework */,
+				0940028616CCB0F4A91FD5A8 /* Pods_kiqitTests.framework */,
+				12330BE66DDF5776DD0FE008 /* Pods_kiqitUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FF892831D43EB1500DF08EF /* kiqit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FF892AC1D43EB1500DF08EF /* Build configuration list for PBXNativeTarget "kiqit" */;
+			buildPhases = (
+				995F50AB5D210533E1CA321C /* [CP] Check Pods Manifest.lock */,
+				8FF892801D43EB1500DF08EF /* Sources */,
+				8FF892811D43EB1500DF08EF /* Frameworks */,
+				8FF892821D43EB1500DF08EF /* Resources */,
+				46A77B85D92D6C28990FFF13 /* [CP] Embed Pods Frameworks */,
+				E49568100A8515CCCCB8C77C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kiqit;
+			productName = kiqit;
+			productReference = 8FF892841D43EB1500DF08EF /* kiqit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FF892971D43EB1500DF08EF /* kiqitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FF892AF1D43EB1500DF08EF /* Build configuration list for PBXNativeTarget "kiqitTests" */;
+			buildPhases = (
+				2FCC5A507EB5C735304AD534 /* [CP] Check Pods Manifest.lock */,
+				8FF892941D43EB1500DF08EF /* Sources */,
+				8FF892951D43EB1500DF08EF /* Frameworks */,
+				8FF892961D43EB1500DF08EF /* Resources */,
+				AF47B5D69ABFC84C347CB54C /* [CP] Embed Pods Frameworks */,
+				15759FF3E2BC6D43C6C4EDFC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FF8929A1D43EB1500DF08EF /* PBXTargetDependency */,
+			);
+			name = kiqitTests;
+			productName = kiqitTests;
+			productReference = 8FF892981D43EB1500DF08EF /* kiqitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FF892A21D43EB1500DF08EF /* kiqitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FF892B21D43EB1500DF08EF /* Build configuration list for PBXNativeTarget "kiqitUITests" */;
+			buildPhases = (
+				D0FF085E593152D9E90523F2 /* [CP] Check Pods Manifest.lock */,
+				8FF8929F1D43EB1500DF08EF /* Sources */,
+				8FF892A01D43EB1500DF08EF /* Frameworks */,
+				8FF892A11D43EB1500DF08EF /* Resources */,
+				59A93EBDFF9DD259AB7715A7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FF892A51D43EB1500DF08EF /* PBXTargetDependency */,
+			);
+			name = kiqitUITests;
+			productName = kiqitUITests;
+			productReference = 8FF892A31D43EB1500DF08EF /* kiqitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FF8927C1D43EB1500DF08EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Jason Safaiyeh";
+				TargetAttributes = {
+					8FF892831D43EB1500DF08EF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = P7V9Q653G7;
+						LastSwiftMigration = 0800;
+					};
+					8FF892971D43EB1500DF08EF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 22DV7NJKR9;
+						LastSwiftMigration = 0800;
+						TestTargetID = 8FF892831D43EB1500DF08EF;
+					};
+					8FF892A21D43EB1500DF08EF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 22DV7NJKR9;
+						LastSwiftMigration = 0800;
+						TestTargetID = 8FF892831D43EB1500DF08EF;
+					};
+				};
+			};
+			buildConfigurationList = 8FF8927F1D43EB1500DF08EF /* Build configuration list for PBXProject "kiqit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FF8927B1D43EB1500DF08EF;
+			productRefGroup = 8FF892851D43EB1500DF08EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FF892831D43EB1500DF08EF /* kiqit */,
+				8FF892971D43EB1500DF08EF /* kiqitTests */,
+				8FF892A21D43EB1500DF08EF /* kiqitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FF892821D43EB1500DF08EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FF892921D43EB1500DF08EF /* LaunchScreen.storyboard in Resources */,
+				8FF8928F1D43EB1500DF08EF /* Assets.xcassets in Resources */,
+				8FF8928D1D43EB1500DF08EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FF892961D43EB1500DF08EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FF892A11D43EB1500DF08EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15759FF3E2BC6D43C6C4EDFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kiqitTests/Pods-kiqitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FCC5A507EB5C735304AD534 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		46A77B85D92D6C28990FFF13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kiqit/Pods-kiqit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59A93EBDFF9DD259AB7715A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kiqitUITests/Pods-kiqitUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		995F50AB5D210533E1CA321C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF47B5D69ABFC84C347CB54C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kiqitTests/Pods-kiqitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0FF085E593152D9E90523F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E49568100A8515CCCCB8C77C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kiqit/Pods-kiqit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FF892801D43EB1500DF08EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F95EDBA1D488283009612C3 /* Event.swift in Sources */,
+				8FF8928A1D43EB1500DF08EF /* LoginViewController.swift in Sources */,
+				8F0300781D487393005F3803 /* EventsTableViewController.swift in Sources */,
+				8F3E3B7C1D4AF841006A102D /* EventTableViewCell.swift in Sources */,
+				8FF892881D43EB1500DF08EF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FF892941D43EB1500DF08EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FF8929D1D43EB1500DF08EF /* kiqitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FF8929F1D43EB1500DF08EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FF892A81D43EB1500DF08EF /* kiqitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FF8929A1D43EB1500DF08EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FF892831D43EB1500DF08EF /* kiqit */;
+			targetProxy = 8FF892991D43EB1500DF08EF /* PBXContainerItemProxy */;
+		};
+		8FF892A51D43EB1500DF08EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FF892831D43EB1500DF08EF /* kiqit */;
+			targetProxy = 8FF892A41D43EB1500DF08EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FF8928B1D43EB1500DF08EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FF8928C1D43EB1500DF08EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FF892901D43EB1500DF08EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FF892911D43EB1500DF08EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FF892AA1D43EB1500DF08EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FF892AB1D43EB1500DF08EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FF892AD1D43EB1500DF08EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84D62FF91A58D5B82DCF75C7 /* Pods-kiqit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = kiqit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.kiqit.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8FF892AE1D43EB1500DF08EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CAD34C6193CC40EA0722AF5 /* Pods-kiqit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = kiqit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.kiqit.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8FF892B01D43EB1500DF08EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F364568499E1E034F90BEA3 /* Pods-kiqitTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = kiqitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiqit.kiqitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kiqit.app/kiqit";
+			};
+			name = Debug;
+		};
+		8FF892B11D43EB1500DF08EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7D26356261842F2A8B262BC /* Pods-kiqitTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = kiqitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiqit.kiqitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kiqit.app/kiqit";
+			};
+			name = Release;
+		};
+		8FF892B31D43EB1500DF08EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F740A5FB26927E45A1D0FFA /* Pods-kiqitUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = kiqitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiqit.kiqitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = kiqit;
+			};
+			name = Debug;
+		};
+		8FF892B41D43EB1500DF08EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346C8092FEB6F4A9E18398F6 /* Pods-kiqitUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = kiqitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiqit.kiqitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = kiqit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FF8927F1D43EB1500DF08EF /* Build configuration list for PBXProject "kiqit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FF892AA1D43EB1500DF08EF /* Debug */,
+				8FF892AB1D43EB1500DF08EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FF892AC1D43EB1500DF08EF /* Build configuration list for PBXNativeTarget "kiqit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FF892AD1D43EB1500DF08EF /* Debug */,
+				8FF892AE1D43EB1500DF08EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FF892AF1D43EB1500DF08EF /* Build configuration list for PBXNativeTarget "kiqitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FF892B01D43EB1500DF08EF /* Debug */,
+				8FF892B11D43EB1500DF08EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FF892B21D43EB1500DF08EF /* Build configuration list for PBXNativeTarget "kiqitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FF892B31D43EB1500DF08EF /* Debug */,
+				8FF892B41D43EB1500DF08EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FF8927C1D43EB1500DF08EF /* Project object */;
+}

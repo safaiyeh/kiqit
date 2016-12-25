@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Regular'), local('Roboto-Regular'), url(https://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff) format('woff');
+}
+
+@media (max-width: 600px) {
+    .preview {
+        width: 100%;
+        height: auto;
+    }
+    .map-image {
+        width: 50%;
+        height: auto;
+    }
+    .googleplay-offset {
+        margin-left: 6%;
+    }
+    .brand-logo {
+        visibility: hidden;
+    }
+}
+
+.nav-wrapper {
+    margin-left: 10%;
+    margin-right: 6%;
+}
+
+.top,
+.what-we-do,
+.features,
+.who-we-are,
+.footer {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    text-align: center;
+}
+
+p {
+    font-weight: 300;
+    font-size: 25px;
+}

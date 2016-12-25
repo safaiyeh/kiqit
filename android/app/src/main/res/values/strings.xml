@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kiqit</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="Email">Email</string>
+    <string name="password">Password</string>
+</resources>
