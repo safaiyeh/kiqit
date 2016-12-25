@@ -37,7 +37,7 @@ it('/GET should return a message in response', (done) => {
 
 ### Set-up
 #### Prerequisite 
-In [app.js](app.js), you need to set your mongo URI in ```javascript mongoose.connect('')```
+In [app.js](app.js), you need to set your mongo URI in ```mongoose.connect('')```
 Also, [Kickbox](https://kickbox.io) was used for email verification. Client IDs are required in [kiqitAdminUserSchema.js](models/kiqitAdminUserSchema.js) and 
 [kiqitUserSchema.js](models/kiqitUserSchema.js)
 #### OSX
